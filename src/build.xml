@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="JDBC Ant Project" default="default" basedir="." 
+xmlns:fx="javafx:com.sun.javafx.tools.ant">
+    
+    <property name="src.dir" location="."/>
+    <property name="build.dir" location="../classes"/>
+    <property name="out.dir" location="../out"/>
+    <property name="docs.dir" location="../docs"/>
+    <property name="bin.dir" location="../bin"/>
+    <property name="lib.dir" location="../lib"/>
+    <property name="jar.name" value="troubleticket.jar"/>
+    <property name="sdk.dir" location="C:\Java\jdk1.8.0_202\lib"/>
+    
+    <target name="default" depends="clean,compile">
+        <path id="fxant">
+            <filelist>
+                <file name="C:\Java\jdk1.8.0_202\lib\ant-javafx.jar"/>
+                <file name="C:\Java\jdk1.8.0_202\jre\lib\ext\jfxrt.jar"/>
+            </filelist>
+        </path>
+        <taskdef resource="com/sun/javafx/tools/ant/antlib.xml"
+                 uri="javafx:com.sun.javafx.tools.ant"
+                 classpathref="fxant"/>
+
+        <fx:application id="Main"
+                        name="Main"
+                        mainClass="troubleticket.Main"/>
+
+        <fx:resources id="appRes">
+            <fx:fileset dir="${out.dir}" includes="HelloWorld.jar"/>
+        </fx:resources>
+
+        <fx:jar destfile="${out.dir}/${jar.name}">
+            <fx:application refid="Main"/>
+            <fx:resources refid="appRes"/>
+            <fileset dir="${build.dir}"/>
+        </fx:jar>
+
+        <fx:deploy width="300" height="250"
+                   outdir="." embedJNLP="true"
+                   outfile="helloworld">
+
+            <fx:application refId="Main"/>
+
+            <fx:resources refid="appRes"/>
+
+            <fx:info title="JavaFX Hello World Application" vendor="Oracle Corporation"/>
+
+        </fx:deploy>
+
+    </target>
+
+    <target name="clean">
+        <echo>Performing clean target</echo>
+        <delete dir="${build.dir}"/>
+        <delete dir="${docs.dir}"/>
+        <delete dir="${out.dir}"/>
+    </target>
+
+    <target name="init">
+        <echo>Performing init target</echo>
+        <mkdir dir="${build.dir}"/>
+        <mkdir dir="${docs.dir}"/>
+        <mkdir dir="${out.dir}"/>
+    </target>
+
+    <target name="compile" depends="clean, init">
+        <echo>Performing compiling</echo>
+        <javac includeantruntime="false" srcdir="${src.dir}" destdir="${build.dir}">
+            <classpath refid="build.classpath"/>
+        </javac>
+
+    </target>
+    
+    <path id="build.classpath">
+        <fileset dir="${lib.dir}" casesensitive="no">
+            <include name="/*.jar"/>
+        </fileset>
+    </path>
+    
+    <!--target name="javadoc" depends="compile">
+        <javadoc packagenames="src" sourcepath="${src.dir}" destdir="${docs.dir}">
+            <fileset dir="${src.dir}">
+                <include name=""/>
+                <exclude name="/resources/"/>
+            </fileset>
+        </javadoc>
+    </target-->
+
+    <target name="build" depends="compile">
+        <jar destfile="${out.dir}/${jar.name}" basedir="${build.dir}">
+            <manifest>
+                <attribute name="Main-Class" value="troubleticket.Main"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="main" depends="compile, build">
+        <description>Main target</description>
+    </target>
+	
+	<target name="run" depends="compile">
+      <java classname="troubleticket.Main" classpath="${build.dir}" fork="true">
+      </java>
+   </target>
+</project>
