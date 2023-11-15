@@ -1,0 +1,106 @@
+User statistics, generated on 2022-12-06 08:39:16.047600
+------
+User: asiadataminer    commits:6        pullrequests:0        othermerges:0       
+   filetype:.java      added:762        removed:0
+   binfile:.db         number:1
+------
+User: igonzals         commits:2        pullrequests:0        othermerges:0       
+   filetype:.md        added:4          removed:0
+   filetype:.txt       added:1          removed:0
+------
+User: Baokun Li        commits:8        pullrequests:0        othermerges:3       
+   filetype:no-ext     added:238        removed:0
+   filetype:.url       added:5          removed:0
+   filetype:.php       added:29         removed:0
+   filetype:.json      added:1617       removed:0
+   filetype:.prefs     added:12         removed:0
+   filetype:.csv"      added:28         removed:0
+   filetype:.css       added:19978      removed:0
+   filetype:.js        added:342907     removed:0
+   filetype:.html"     added:221        removed:0
+   filetype:.svg       added:2959       removed:0
+   filetype:.txt       added:169        removed:0
+   filetype:.html      added:15101      removed:0
+   filetype:.xml       added:81         removed:0
+   filetype:.java      added:746        removed:0
+   filetype:.csv       added:137554     removed:0
+   filetype:.js"       added:30         removed:0
+   binfile:.png        number:39
+   binfile:.otf        number:1
+   binfile:.class      number:5
+   binfile:.woff       number:2
+   binfile:.db         number:1
+   binfile:.gif        number:3
+   binfile:.woff2      number:2
+   binfile:.ttf        number:2
+   binfile:.jpg        number:31
+   binfile:.jar        number:1
+   binfile:.eot        number:2
+   binfile:.psd        number:1
+   binfile:.xls        number:1
+   binfile:.dll        number:2
+   binfile:.zip        number:3
+   binfile:.exe        number:1
+   binfile:.ico        number:1
+------
+User: 曾孟揚        commits:1        pullrequests:0        othermerges:0       
+   filetype:.java      added:110        removed:0
+------
+User: mengyang1996     commits:26       pullrequests:0        othermerges:0       
+   filetype:.md        added:58         removed:25
+   filetype:.java      added:1236       removed:146
+   binfile:.png        number:3
+------
+User: LikhithaDevineni commits:2        pullrequests:0        othermerges:0       
+   filetype:.txt       added:2          removed:0
+------
+User: Israel Gonzalez  commits:59       pullrequests:0        othermerges:1       
+   filetype:no-ext     added:41         removed:6
+   filetype:.java      added:9920       removed:6597
+   filetype:.sql       added:281        removed:38
+   filetype:.css       added:934        removed:0
+   filetype:.js        added:499        removed:0
+   filetype:.md        added:122        removed:1
+   filetype:.txt       added:0          removed:1
+   filetype:.html      added:25452      removed:0
+   filetype:.xml       added:165        removed:59
+   filetype:.drawio    added:7          removed:6
+   binfile:.docx       number:1
+   binfile:.png        number:28
+   binfile:.jpg        number:8
+   binfile:.jar        number:14
+------
+User: Jonathan Cook    commits:5        pullrequests:0        othermerges:0       
+   filetype:.txt       added:158        removed:58
+------
+User: Md Ishtiaq Ahmed commits:29       pullrequests:1        othermerges:0       
+   filetype:.md        added:43         removed:39
+   filetype:.java      added:1100       removed:141
+   binfile:.pdf        number:1
+------
+=========================
+Wiki User Statistics
+=========================
+User statistics, generated on 2022-12-06 08:39:16.079046
+------
+User: Likhitha Devineni commits:6        pullrequests:0        othermerges:0       
+   filetype:.md        added:28         removed:3
+------
+User: asiadataminer    commits:2        pullrequests:0        othermerges:0       
+   filetype:.md        added:8          removed:8
+------
+User: igonzals         commits:11       pullrequests:0        othermerges:0       
+   filetype:.md        added:25         removed:21
+------
+User: mengyang1996     commits:19       pullrequests:0        othermerges:0       
+   filetype:.md        added:60         removed:66
+------
+User: EverettBuk       commits:13       pullrequests:0        othermerges:0       
+   filetype:.md        added:105        removed:48
+------
+User: Israel Gonzalez  commits:30       pullrequests:0        othermerges:0       
+   filetype:.md        added:248        removed:195
+------
+User: Md Ishtiaq Ahmed commits:70       pullrequests:0        othermerges:0       
+   filetype:.md        added:697        removed:343
+------
